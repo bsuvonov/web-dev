@@ -311,7 +311,7 @@ function calculate(){
         a = infixToPostfix(content);
         console.log(a);
         let result = String(evaluatePostfix(a));
-        if(result.includes('.') && result.split('.')[1].length > 6) {
+        if(result.includes('.') && result.split('.')[1].length > 4) {
             result = result.split('.')[0] + '.' + result.split('.')[1].slice(0, 4);
         }
         screen.textContent = content = result;
