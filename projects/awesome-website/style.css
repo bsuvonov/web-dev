@@ -1,0 +1,249 @@
+
+/* HEAD */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+    padding-left: 15%;
+    padding-right: 12%;
+    height: 550px;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex: 0 1 20px;
+    justify-content: space-between;
+}
+
+.header ul {
+    color: #E5E7EB;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.header p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #F9FAF8;
+}
+
+.head .content {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex: 0 1 400px;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+
+
+.head .content .text {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.head .content .text p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.head .content button {
+    margin-top: 15px;
+}
+
+
+.head .content .text button {
+    color: #F9FAF8;
+    background-color: #3882f6;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:120px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#awesome {
+    margin-top: 4px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+
+#header-image {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+    font-size: 18px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.head .content img {
+    width: 500px;
+    background-color: #80848a9e;      
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* SECTION 1 */
+
+.section1 {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 12%;
+    height: 500px;
+}
+
+.section1 > p {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.images {
+    display: flex;
+    flex: 0 1 200px;
+    justify-content: center;
+}
+
+.images img {
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    border: 4px solid #3882f6;
+}
+
+.images div {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 190px;
+}
+
+.images p {
+    padding: 0px 6px;
+    font-size: 18px;
+    color: #3234379e;
+}
+
+
+/* SECTION 2 */
+
+.section2 {
+    padding-left: 22%;
+    padding-right: 20%;
+    height: 450px;
+    background-color: #E5E7EB;
+}
+
+.section2 .content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+#author {
+    margin-top: 2;
+    margin-right: 25px;
+    font-size: x-large;
+    text-align: right;
+    font-weight: 1000;
+}
+
+
+/* SECTION 3 */
+
+.section3 {
+    padding-left: 15%;
+    padding-right: 12%;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.section3 .content {
+    display: flex;
+    height: 120px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.section3 button{
+    color: #F9FAF8;
+    background-color: #3882f6;
+    border: 2px solid #F9FAF8;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    width:120px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.section3 button:hover {
+    background-color: #F9FAF8;
+    color:#3882f6
+}
+
+#call {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+#signup {
+    margin-top: 2px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
