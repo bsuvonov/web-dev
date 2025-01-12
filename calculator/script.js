@@ -276,8 +276,8 @@ function evaluatePostfix(a){
             operands.push(Number(elem));
         } else {
             if(operands.length < 2) throw 'error';
-            let a = operands.pop();
             let b = operands.pop();
+            let a = operands.pop();
 
             switch (elem) {
                 case '+':
