@@ -305,10 +305,14 @@ function evaluatePostfix(a){
 }
 
 function calculate(){
-    a = infixToPostfix(content);
-    console.log(a);
-    let result = evaluatePostfix(a);
-    screen.textContent = content = String(result.toFixed(6));
+    if(content===''){
+        screen.textContent = content = '';
+    } else {
+        a = infixToPostfix(content);
+        console.log(a);
+        let result = evaluatePostfix(a);
+        screen.textContent = content = String(result.toFixed(6));
+    }
 }
 
 
