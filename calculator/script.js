@@ -310,8 +310,11 @@ function calculate(){
     } else {
         a = infixToPostfix(content);
         console.log(a);
-        let result = evaluatePostfix(a);
-        screen.textContent = content = String(result.toFixed(6));
+        let result = String(evaluatePostfix(a));
+        if(result.includes('.') && result.split('.')[1].length > 6) {
+            result = result.split('.')[0] + '.' + result.split('.')[1].slice(0, 4);
+        }
+        screen.textContent = content = result;
     }
 }
 
