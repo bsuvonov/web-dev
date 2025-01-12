@@ -308,9 +308,9 @@ function calculate(){
     a = infixToPostfix(content);
     console.log(a);
     let result = evaluatePostfix(a);
-    screen.textContent = content = result;
+    screen.textContent = content = String(result.toFixed(6));
 }
-  
+
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
