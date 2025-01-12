@@ -246,7 +246,7 @@ function infixToPostfix(expression) {
     for (let i = 0; i < expression.length; i++) {
         const char = expression[i];
 
-        if (/[0-9]/.test(char) || (i-1!==0 && '+-*/%'.includes(char) && '+-*/%'.includes(expression[i-1]))) {
+        if (/[0-9]/.test(char) || (i-1!==0 && '+-*/%'.includes(char) && (i-1===-1 || '+-*/%'.includes(expression[i-1])))) {
             let number = char;
             while(i < expression.length && /[0-9.]/.test(expression[++i]))
                 number = number + expression[i];
